@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Слайдер</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+<link rel="stylesheet" href="./style.css">
+    <!-- Demo styles -->
+    
+<body> 
+    <h1>10 милых котиков из 10</h1>
+		<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+        
+        <div  class="swiper-slide"><img src="https://sun9-37.userapi.com/impf/x7ICC20dJWsmDoOSZgD3rFLRNMO8x9QYJEeXbA/MIfdZoWyqro.jpg?size=640x632&quality=96&sign=7eeab1ebaf6852ac4ca3d6ca4d8cc7fd&type=album"></div>
+        <div  class="swiper-slide"><img src="https://sun9-33.userapi.com/impf/t_KLHmcLPnMu1y6xc_MhPgPq58kB55REdgDqfg/c3dWNtNwKKY.jpg?size=640x640&quality=95&sign=4e72ff07ef919f5e7211df3b4dc54d74&type=album"></div>
+        <div  class="swiper-slide"><img src="https://sun9-49.userapi.com/impf/589jYMc2ZvxITAbR93fIlz_sGjGreD6WsqWyDQ/R8tOdAXIBlc.jpg?size=750x1334&quality=96&sign=5bec928f18913f26a3c5fdf30918f487&type=album"></div>
+        <div  class="swiper-slide"><img src="https://sun9-36.userapi.com/impf/0D37S3kAb2uZJQ-FVDVr59A0KUrcLxXCQwX1wQ/p5NOvlEEgDo.jpg?size=750x750&quality=95&sign=47eb0b2ec189983520ce1b507b91c33e&type=album"></div>
+        <div  class="swiper-slide"><img src="https://sun9-79.userapi.com/impf/Koxwdvtyk40Okw1kK1_PWNBKkczUDlvWifeibA/fB2Q9CIdKb0.jpg?size=980x1038&quality=95&sign=1943d7a0392ff7dd5e43ec22b226a80e&type=album"></div>
+        <div class="swiper-slide"><img src="https://sun9-29.userapi.com/impf/g5Ux3Cy2PcNUVz6Vgn8JwIYeq0FvDRiiAfIaXw/ihdFJOO7IQ4.jpg?size=980x460&quality=95&sign=f657611fcbd755fafc7ed62fbd019105&type=album"></div>
+        <div class="swiper-slide"><img src="https://sun9-36.userapi.com/impf/iVa42DjEgX-Mfds299yvMo_9_0cl8P6EKZfoMQ/Q1oeS5vW4yA.jpg?size=1080x1080&quality=95&sign=9515f928b6360b8fdb715d0e8ba92167&type=album"></div>
+        <div class="swiper-slide"><img src="https://sun9-78.userapi.com/impf/XlGWxtS4SQSkkidV8kg5T4S66avI_aEet1S24w/LDtsYqrT2u4.jpg?size=1152x1437&quality=95&sign=3d0ac0b9113e00712188fe5a5e1eb821&type=album"></div>
+        <div class="swiper-slide"><img src="https://sun9-38.userapi.com/impf/0u5fkWVI2T4-Xm3z-s4oCIxfVMjEx-oabW-DfQ/vNJyk7V0FL8.jpg?size=560x768&quality=95&sign=e2fa1b111ec91ff97892bc8247d48aab&type=album"></div>
+        <div class="swiper-slide"><img src="https://sun9-36.userapi.com/impf/gkOBG-J6TGEgPb8T6TYhcmR_4yKtc_SX9x67zw/jXbyporhiCg.jpg?size=480x480&quality=95&sign=a47eca3ea33b3864cfa7e891dfbe578d&type=album"></div>
+    
+		
+      </div>
+      <div class="swiper-pagination"></div>
+	  <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+		 navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+	  </body>
+</html>
+
